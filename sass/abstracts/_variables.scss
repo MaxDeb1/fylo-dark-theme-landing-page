@@ -1,0 +1,41 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+// Font Variables
+///Headings, Call-to-actions, Header Navigation
+$raleway: 'Raleway', sans-serif;
+///Body
+$open: 'Open Sans', sans-serif; 
+
+
+///Colors
+///Dark Blue
+$intro: hsl(210, 8%, 14%);
+$main: hsl(218, 28%, 13%);
+$footer: hsl(216, 53%, 9%);
+$testimonials: hsl(219, 30%, 18%);
+
+///inside call-to-action gradient
+$Cyan: hsl(176, 68%, 64%);
+$Blue: hsl(198, 60%, 50%);
+
+///error
+$Light-Red: hsl(0, 100%, 63%);
+
+$White: hsl(0, 0%, 100%);
+
+
+/// Breakpoints map
+$breakpoints: (
+  'small': 375px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+/// Responsive Font-Size
+html {
+  --res: calc(0.01 * 10vmin);
+}
+//How to use it : font-size: calc(64 * vart(--res));

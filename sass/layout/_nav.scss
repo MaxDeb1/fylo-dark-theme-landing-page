@@ -1,0 +1,51 @@
+nav {
+  width: 100vw;
+  padding: 25px 25px 25px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $raleway;
+  color: $White;
+  background-color: $intro;
+
+  img {
+    height: auto;
+    width: 24.5%;
+  }
+
+  ul {
+    display: flex;
+    gap: 1.5625rem;
+  }
+
+  a {
+    font-size: 0.75rem;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-shadow: 0 0 0.85px $White, 0 0 0.85px $White;
+    border-color: $White;
+  }
+}
+
+@media (min-width: 990px) {
+  nav {
+    padding-top: 70px;
+    padding-left: 80px;
+
+    img {
+      width: 175px;
+    }
+
+    ul {
+      padding: 0 55px 0 0;
+      gap: 3.6rem;
+    }
+
+    a {
+      font-size: 1rem;
+    }
+  }
+}

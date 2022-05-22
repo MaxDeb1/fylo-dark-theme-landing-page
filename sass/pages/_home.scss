@@ -1,0 +1,148 @@
+body {
+  width: 100vw;
+  background: $main;
+  font-family: $open;
+  color: $White;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.curvy {
+  height: 315px;
+  width: 101vw;
+  position: absolute;
+  background: url(../images/bg-curvy-mobile.svg) no-repeat bottom;
+  background-color: $intro;
+  background-size: 100% 43%;
+  z-index: -1;
+}
+
+.intro {
+  width: 100%;
+  padding: 0 37.5px;
+  text-align: center;
+
+  h1 {
+    font-family: $raleway;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}
+
+.illustration img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.productive {
+  width: 100%;
+  padding: 0 37.5px;
+  text-align: left;
+  position: relative;
+
+  h1 {
+    font-family: $raleway;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-top: 1.8rem;
+  }
+
+  p {
+    font-size: 0.82rem;
+    line-height: 1.5rem;
+  }
+}
+
+.link {
+  display: inline-block;
+  border-bottom: 1px solid $Cyan;
+  height: 1.5rem;
+  color: $Cyan;
+  cursor: pointer;
+
+  a {
+    font-size: 0.71rem;
+  }
+
+  .arrow {
+    display: inline-block;
+    padding-left: 0.2rem;
+  }
+
+  svg {
+    width: 0.96rem;
+    vertical-align: middle;
+  }
+
+  &:hover,
+  &:hover use {
+    fill: #fff;
+    color: $White;
+    border-color: $White;
+  }
+}
+
+@media (min-width: 990px) {
+  .curvy {
+    height: 1070px;
+    width: 100vw;
+    background: url(../images/bg-curvy-desktop.svg) no-repeat bottom;
+    background-color: $intro;
+    
+  }
+
+  .intro {
+    width: 720px;
+    padding: 0;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 4rem;
+    }
+
+    p {
+      width: 620px;
+      margin: 0 auto;
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+  }
+
+  .productive {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 135px 115px 0;
+
+    .illustration {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .text {
+      margin: auto 0;
+      padding-left: 50px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      padding-right: 4rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .link {  
+    a {
+      font-size: 1rem;
+    }
+  }
+}
